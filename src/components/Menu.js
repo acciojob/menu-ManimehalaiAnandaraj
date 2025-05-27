@@ -1,4 +1,5 @@
-import React from 'react';
+import React , {useState} from 'react';
+
 
 function Menu({ items, activeCategory, setActiveCategory }) {
   const filteredItems = activeCategory === 'all' 
@@ -11,25 +12,25 @@ function Menu({ items, activeCategory, setActiveCategory }) {
       
       <div className="filter-buttons">
         <button 
-          id="filter-btn-1" 
+          id="filter-btn" 
           onClick={() => setActiveCategory('all')}
         >
           All
         </button>
         <button 
-          id="filter-btn-2" 
+          id="filter-btn-1" 
           onClick={() => setActiveCategory('breakfast')}
         >
           Breakfast
         </button>
         <button 
-          id="filter-btn-3" 
+          id="filter-btn-2" 
           onClick={() => setActiveCategory('lunch')}
         >
           Lunch
         </button>
         <button 
-          id="filter-btn-4" 
+          id="filter-btn-3" 
           onClick={() => setActiveCategory('shakes')}
         >
           Shakes
